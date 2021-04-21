@@ -18,61 +18,47 @@ limitations under the License.
 <!doctype html>
 
 <head>
-  <title>TensorFlow.js: Using a pretrained MobileNet</title>
+  <title>🧠 Brain Tumor Identifier</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../shared/tfjs-examples.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<style>
-  .pred-container {
-    margin-bottom: 20px;
-  }
 
-  .pred-container > div {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-  }
-
-  .row {
-    display: table-row;
-  }
-  .cell {
-    display: table-cell;
-    padding-right: 20px;
-  }
-
-  #file-container {
-    margin-bottom: 20px;
-  }
-</style>
 
 <body>
-  <div class="tfjs-example-container">
-    <section class='title-area'>
-      <h1>TensorFlow.js: Using a pretrained MobileNet</h1>
-    </section>
+  <div class="jumbotron text-center tfjs-example-container" >
+    <div class="container">
+        <i class="fas fa-brain fa-6x"></i>
+
+      <h1 class="display-3">TensorFlow.js: Using a pretrained MobileNet</h1>
+
+
+      <div>
+          <h1>Description</h1>
+          <h5>
+            This app takes an image ( Brain MRI ) input and classifies it into one of the following four categories:
+            <ul>
+              <li>No Tumor</li>
+              <li>Meningioma Tumor</li>
+              <li>Glioma Tumor</li>
+              <li>Pituitary Tumor</li>
+            </ul>
+            This app uses a Mobilenet pretrained model to classify images.
+          </h5>
+        </div>
 
     <section>
-      <p class='section-head'>Description</p>
-      <p>
-        This demo uses the pretrained MobileNet_25_224 model from Keras which you can find
-        <a href="https://github.com/fchollet/deep-learning-models/releases/download/v0.6/mobilenet_2_5_224_tf.h5">here</a>.
-
-        It is not trained to recognize human faces. For best performance, upload images of objects
-        like piano, coffee mugs, bottles, etc. You can see all the objects types it has been trained to recognize in <a
-          href="https://github.com/tensorflow/tfjs-examples/blob/master/mobilenet/imagenet_classes.js">imagenet_classes.js</a>.
-      </p>
-    </section>
-
-    <section>
-      <p class='section-head'>Status</p>
+      <p class='secret-text section-head'>Status</p>
       <div id="status"></div>
     </section>
 
     <section>
-      <p class='section-head'>Model Output
+      <p class='secret-text section-head'>Model Output
         <br><span id="imp"></span>
       </p>
 
@@ -86,5 +72,6 @@ limitations under the License.
     </section>
 
     <script src="index.js"></script>
+  </div>
   </div>
 </body>
